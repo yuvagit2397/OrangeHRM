@@ -37,6 +37,7 @@ public class TestRunner {
 	}*/
 	@BeforeClass
 	public static void browserLaunch() throws IOException {
+		System.out.println("browser is going to be launched");
 		String browser = FileReaderManager.getInstances().getBrowser();
 		if (browser.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();
